@@ -5,6 +5,6 @@ function fizzBuzz(n) {
         return 'fizz';
     else if ((n % 5) === 0)
         return 'buzz';
-    return 1
+    return n
 }
 module.exports = fizzBuzz

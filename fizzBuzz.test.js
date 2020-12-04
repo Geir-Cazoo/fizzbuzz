@@ -5,6 +5,10 @@ describe('fizzBuzz', () => {
         expect(fizzBuzz(1)).toBe(1)
     })
 
+    it('should return 7 if it receives 7', () => {
+        expect(fizzBuzz(7)).toBe(7)
+    })
+
     it('should return fizz if it receives 3', () => {
         expect(fizzBuzz(3)).toBe('fizz');
     });
@@ -23,6 +27,10 @@ describe('fizzBuzz', () => {
 
     it('should return fizzBuss if it receives 15', () => {
         expect(fizzBuzz(15)).toBe('fizzBuzz');
+    });
+
+    it('should return fizzBuzz if it receives 30', () => {
+        expect(fizzBuzz(30)).toBe('fizzBuzz');
     });
 
 });
