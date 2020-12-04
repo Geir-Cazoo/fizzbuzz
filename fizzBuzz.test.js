@@ -1,4 +1,6 @@
 const fizzBuzz = require("./fizzBuzz");
+const each = require('jest-each').default;
+
 
 describe('fizzBuzz', () => {
     it('should return 1 if it receives 1', () => {
@@ -31,6 +33,15 @@ describe('fizzBuzz', () => {
 
     it('should return fizzBuzz if it receives 30', () => {
         expect(fizzBuzz(30)).toBe('fizzBuzz');
+    });
+
+    each([
+        [1,1],
+        [3,'fizz'],
+        [5,'buzz'],
+        [15, 'fizzBuzz']
+    ]).it("should return fizzBuzz if it receives '%s'", (number, expected) => {
+        expect(fizzBuzz(number)).toBe(expected);
     });
 
 });
