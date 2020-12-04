@@ -9,8 +9,14 @@ describe('fizzBuzz', () => {
         expect(fizzBuzz(3)).toBe('fizz');
     });
 
+    it('should return fizz if it receives 9', () => {
+        expect(fizzBuzz(9)).toBe('fizz');
+    });
+
     it('should return buzz if it receives 5', () => {
         expect(fizzBuzz(5)).toBe('buzz');
     });
 
+
 });
+
