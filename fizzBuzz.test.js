@@ -9,7 +9,11 @@ describe('FizzBuzz', () => {
         expect(fizzBuzz(2)).toBe(2);
     });
 
-    it('should return 3 when passed 3', () => {
+    it('should return fizz when passed 3', () => {
         expect(fizzBuzz(3)).toBe('fizz');
+    });
+
+    it('should return buzz when passed 5', () => {
+        expect(fizzBuzz(5)).toBe('buzz');
     });
 })
