@@ -2,11 +2,11 @@ const fizzBuzz = require('./fizzBuzz');
 
 describe('FizzBuzz', () => {
     it('should retur 1 when passed 1', () => {
-        expect(fizzBuzz(1)).toBe(1);
+        expect(fizzBuzz(1)).toBe('1');
     });
 
     it('should return 2 when passed 2', () => {
-        expect(fizzBuzz(2)).toBe(2);
+        expect(fizzBuzz(2)).toBe('2');
     });
 
     it('should return fizz when passed 3', () => {
@@ -27,6 +27,10 @@ describe('FizzBuzz', () => {
 
     it('should return buzz when passed 10', () => {
         expect(fizzBuzz(10)).toBe('buzz');
+    });
+
+    it('should return buzz when passed 20', () => {
+        expect(fizzBuzz(20)).toBe('buzz');
     });
 
     it('should return 11 when passed 11', () => {
