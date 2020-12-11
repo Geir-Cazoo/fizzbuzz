@@ -8,4 +8,12 @@ describe('leapYear', () => {
     it('should return false for 5', () => {
         expect(leapYear(5)).toBe(false);
     });
+
+    it('should return false for 8', () => {
+        expect(leapYear(8)).toBe(true);
+    });
+
+    it('should return false for 100', () => {
+        expect(leapYear(100)).toBe(false);
+    });
 })
