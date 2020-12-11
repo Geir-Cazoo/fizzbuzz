@@ -1,6 +1,11 @@
 const leapYear = require('./leapYear');
 
 describe('leapYear', () => {
+
+    it('should return false for 2', () => {
+        expect(leapYear(2)).toBe(false);
+    });
+
     it('should return true for 4', () => {
         expect(leapYear(4)).toBe(true);
     });
@@ -9,7 +14,7 @@ describe('leapYear', () => {
         expect(leapYear(5)).toBe(false);
     });
 
-    it('should return false for 8', () => {
+    it('should return true for 8', () => {
         expect(leapYear(8)).toBe(true);
     });
 
