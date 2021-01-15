@@ -1,6 +1,7 @@
 class TicTacToe {
     constructor() {
         this.board = [];
+        this.turn = 'X';
     }
 
     status() {
@@ -14,9 +15,18 @@ class TicTacToe {
             return 'valid move';
         }
 
+        if (piece != this.turn) {
+            return 'invalid turn';
+        }
+
         if (this.board[pos]) {
             return 'space taken';
         }
+
+        this.turn = (this.turn === 'X') ? 'O' : 'X';
+
+        return 'invalid turn';
+
     }
 }
 
